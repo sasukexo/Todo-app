@@ -21,5 +21,5 @@ from tasks import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('todo/', include('tasks.urls')),
+    path('', include('tasks.urls')),
 ]
