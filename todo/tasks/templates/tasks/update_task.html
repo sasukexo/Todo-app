@@ -1,10 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- stylesheet -->
+    
+    <!-- favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Todo</title>
+</head>
+<body>
+    <style>
+        
+            body{
+                background-color: #638CB8;
+                
+            }
+            
+            h3{
+                font-family: 'Roboto Mono', monospace;
+                justify-content: center;
+                display: flex;
+                text-decoration: underline;
+            }
+            .a{
+                font-family: 'Josefin Sans', sans-serif;
+                color:black;
+                margin-left:0;
+                style:bold;
+               
+            }
+            .a:hover{
+                color:#A6D0DD;
+                
+            }
+            input{
+                background-color:#73A9AD;
+                border-radius: 3px;
+                justify-content: center;
+                display: flex;
+                
+                
+            }
+            input:hover{
+                background-color: #4C3D3D;
+            }
+            
+            
+            
+        </style>
 <h3>Update Task</h3>
-
+<div class=a>
 <form method="POST" action="">
 	{% csrf_token %}
 
 	{{form}}
-	<input type="submit" name="Update Task">
+
+	<input type ="submit" name="Update Task">
 	
-	
+</div>
 </form>
+</body>
+</html>

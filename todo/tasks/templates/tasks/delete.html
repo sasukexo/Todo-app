@@ -1,8 +1,69 @@
-<p>Are you sure you want to delete "{{item}}"?</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- stylesheet -->
+   
+    <!-- favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Todo</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #638CB8;
+            
+        }
+        
+        p{
+            font-family: 'Roboto Mono', monospace;
+            justify-content: center;
+            display: flex;
+        }
+        a{
+            font-family: 'Josefin Sans', sans-serif;
+            color:black;
+            margin-left:447px;
+            style:bold;
+            
+        }
+        a:hover{
+            color:white;
+            background-color: black;
+        }
+        input{
+            background-color:#73A9AD;
+            border-radius: 3px;
+            justify-content: center;
+            display: flex;
+            margin-left:440px;
+            margin-top:20px;
+            
+        }
+        input:hover{
+            background-color: #4C3D3D;
+        }
+        span{
+           color: #F1F6F9;
+        }
 
-<a href="{% url 'list' %}" >Cancel</a>
-
-<form method="POST" action="">
-	{% csrf_token %}
-	<input type="submit" name="Confirm">
-</form>
+        
+        
+    </style>
+    <div class="centre-column">
+        <p>Are you sure you want to delete <span>"{{item}}"?</span></p>
+        
+        <a href="{% url 'list' %}" >Cancel</a>
+        
+        <form method="POST" action="">
+            {% csrf_token %}
+            <input type ="submit" name="Submit">
+        </form>
+        </div>
+</body>
+</html>
