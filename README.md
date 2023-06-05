@@ -1,1 +1,1 @@
-A simple todo list made with django.
+A simple todo list made with HTML, Css and django.
