@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config(default="postgresql://gopal:Rrbfqw1Dt-NhU-zTtYdNSA@wan-siren-5288.8nk.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full", engine='django_cockroachdb')}
+DATABASES = {'default': dj_database_url.config(default="postgresql://aswin:xLm4HHuL4mEsG8puT26EgA@meteor-fox-5330.8nk.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full", engine='django_cockroachdb')}
 
 
 # Password validation
